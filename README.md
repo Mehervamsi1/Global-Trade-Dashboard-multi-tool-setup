@@ -8,16 +8,16 @@ for Power BI, Tableau, Amazon QuickSight, and Microsoft Fabric.
 
 1) Put your CSV at `data/trade_data.csv` with columns:
 
-year,reporter_iso3,partner_iso3,product_code,distance_km,fta_active,adval_tariff_pct,
-reporter_gdp_bln,partner_gdp_bln,reporter_pop_m,partner_pop_m,reporter_cpi,partner_cpi,
-export_value_usd_mln,quantity_tonnes,unit_price_usd_per_tonne
+    year,reporter_iso3,partner_iso3,product_code,distance_km,fta_active,adval_tariff_pct,
+    reporter_gdp_bln,partner_gdp_bln,reporter_pop_m,partner_pop_m,reporter_cpi,partner_cpi,
+    export_value_usd_mln,quantity_tonnes,unit_price_usd_per_tonne
 
 
 2) Python (Plotly Dash app):
    
-cd python
-pip install -r requirements.txt
-python dash_app.py
+    cd python
+    pip install -r requirements.txt
+    python dash_app.py
 
 Open the printed local URL in your browser.
 
