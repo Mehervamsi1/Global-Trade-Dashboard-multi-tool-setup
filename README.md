@@ -19,7 +19,7 @@ for Power BI, Tableau, Amazon QuickSight, and Microsoft Fabric.
     pip install -r requirements.txt
     python dash_app.py
 
-Open the printed local URL in your browser.
+    Open the printed local URL in your browser.
 
 3) Power BI / Tableau / QuickSight / Fabric:
    Follow the guides in their respective folders.
