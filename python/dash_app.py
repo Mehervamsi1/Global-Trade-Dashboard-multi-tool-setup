@@ -263,5 +263,5 @@ if __name__ == "__main__":
     df = load_data(DATA_PATH)
     app = make_app(df)
     port = int(os.environ.get("PORT", 8050))
-    app.run_server(debug=False, port=port)
+    app.run(debug=False, port=port)
 
