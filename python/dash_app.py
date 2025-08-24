@@ -79,6 +79,9 @@ def make_app(df):
             }),
             html.H5("Explore exports by year, region, FTA, and more", style={
                 "textAlign": "center", "color": "#7f8c8d", "marginBottom": "30px"
+            }),
+            html.H6("The data is purely synthetic. The insights derived from it may not reflect real-world scenarios.", style={
+                "textAlign": "center", "color": "#7f8c8d", "marginBottom": "20px"
             })
         ], className="container"),
 
