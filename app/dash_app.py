@@ -5,6 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from dash import Dash, dcc, html, Input, Output
 import dash
+from . import make_app
 
 # Path setup
 DATA_PATH = os.environ.get("TRADE_CSV", os.path.join(os.path.dirname(__file__), "..", "data", "trade_data.csv"))
