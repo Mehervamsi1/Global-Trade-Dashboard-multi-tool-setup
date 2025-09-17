@@ -52,15 +52,17 @@ def modernize_fig(fig, title=None):
         fig.update_layout(title=title)
     return fig
 
+external_stylesheets = ["https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"]
+app = Dash(__name__, external_stylesheets=external_stylesheets)
+app.title = "Global Trade Dashboard"
+    
+server = app.server
+
 # -------- App Factory --------
 def make_app(df):
     years, reporters, partners, products = prep_dimensions(df)
 
-    external_stylesheets = ["https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"]
-    app = Dash(__name__, external_stylesheets=external_stylesheets)
-    app.title = "Global Trade Dashboard"
     
-    server = app.server
 
     CARD_STYLE = {
         "flex": "1",
