@@ -1,4 +1,5 @@
 venv/
-python/dash2.py
+app/dash2.py
 temp.txt
 data/trade_data_modified.csv
+.env
